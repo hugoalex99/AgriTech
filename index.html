@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <nav class="container navegacao">
+            <div class="logo">
+                AgriTech
+            </div>
+            <button class="botao-menu">☰</button>
+
+            <ul class="menu">
+                <li><a href="#destaque">Home</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="destaque" id="destaque">
+        <div class="container">
+            <div class="texto">
+                <h1>Tecnologia Sustentável</h1>
+                <p>Produtos que combinam inovação com respondibilidade ambiencial de qualidade</p>
+                <a href="#" class="botao">Explorar</a>
+            </div>
+
+            <div class="imagem">
+                <img src="assets/img/logo.png" alt="logo-agritech">
+            </div>
+        </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+        <h2>Nossos Diferenciais</h2>
+
+        <div class="container">
+            <div class="card">
+                <div class="icone">♻️</div>
+                <h3>Materias Sustentáveis</h3>
+                <p>Componentes recicláveis e biodegradáveis que reduzem o impacto ambiental.</p>
+            </div>
+
+            <div class="card">
+                <div class="icone">⚡</div>
+                <h3>Eficiência Energética</h3>
+                <p>Dispositivos que consomem menos energia e têm maior vida útil.</p>
+            </div>
+
+            <div class="card">
+                <div class="icone">🌱</div>
+                <h3>Programa de Reciclagem</h3>
+                <p>Logística reversa para reciclagem adequada de dispostivos antigos.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cta" id="sobre">
+        <h2>Pronto para fazer a diferença?</h2>
+        <p>Junte-se a quem já escolheu tecnologia consciente para o futuro do planeta.</p>
+        <a href="#" class="botao">Comprar agora</a>
+    </section>
+
+    <footer>
+        Direitos Reservados &copy; AgriTech 2025
+    </footer>
+</body>
+
+<script>
+    let botao = document.querySelector('.botao-menu')
+    let menu = document.querySelector('.menu')
+
+    botao.addEventListener('click', () => {
+        menu.classList.toggle('ativo')
+})
+</script>
+
+</html>
